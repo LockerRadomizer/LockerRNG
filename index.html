@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockerRandomizer Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 LockerRandomizer Pro</h1>
+        <p>Professional Fortnite Loadout Generator</p>
+    </header>
+
+    <div class="controls">
+        <button onclick="generateLoadout()">🎲 Generate Loadout</button>
+
+        <input id="search" type="text" placeholder="Search cosmetics...">
+        <button onclick="searchCosmetics()">🔍 Search</button>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>⭐ Favorite Outfit</h2>
+            <p id="favoriteOutfit">Loading...</p>
+            <button onclick="reroll('FavoriteOutfits','favoriteOutfit')">🔄 Reroll</button>
+        </div>
+
+        <div class="card">
+            <h2>👕 Outfit</h2>
+            <p id="outfit">Loading...</p>
+            <button onclick="reroll('outfits','outfit')">🔄 Reroll</button>
+        </div>
+
+        <div class="card">
+            <h2>🎒 Back Bling</h2>
+            <p id="backbling">Loading...</p>
+            <button onclick="reroll('backblings','backbling')">🔄 Reroll</button>
+        </div>
+
+        <div class="card">
+            <h2>⛏️ Pickaxe</h2>
+            <p id="pickaxe">Loading...</p>
+            <button onclick="reroll('pickaxes','pickaxe')">🔄 Reroll</button>
+        </div>
+
+        <div class="card">
+            <h2>🪂 Glider</h2>
+            <p id="glider">Loading...</p>
+            <button onclick="reroll('gliders','glider')">🔄 Reroll</button>
+        </div>
+
+    </div>
+
+    <div class="actions">
+        <button onclick="saveLoadout()">⭐ Save Loadout</button>
+        <button onclick="changeTheme()">🎨 Change Theme</button>
+    </div>
+
+    <section class="saved-loadouts">
+        <h2>💾 Saved Loadouts</h2>
+        <ul id="favorites"></ul>
+    </section>
+
+    <footer>
+        <p>© 2026 LockerRandomizer Pro</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

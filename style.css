@@ -1,0 +1,184 @@
+/* =========================
+   THEME VARIABLES
+========================= */
+
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: white;
+}
+
+/* Default Dark Theme */
+.theme-dark {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: white;
+}
+
+.theme-light {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #111827;
+}
+
+.theme-fortnite {
+    --bg: #0b1020;
+    --card: #1d4ed8;
+    --text: white;
+}
+
+.theme-galaxy {
+    --bg: #1e1b4b;
+    --card: #6d28d9;
+    --text: white;
+}
+
+.theme-neon {
+    --bg: #052e16;
+    --card: #16a34a;
+    --text: white;
+}
+
+/* =========================
+   BASE RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+/* =========================
+   CONTROLS
+========================= */
+
+.controls {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   GRID / CARDS
+========================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    min-height: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   BUTTONS + INPUT
+========================= */
+
+button,
+input {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.actions {
+    margin-top: 20px;
+}
+
+/* =========================
+   SAVED LOADOUTS
+========================= */
+
+.saved-loadouts {
+    margin-top: 30px;
+}
+
+.saved-loadouts h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: var(--card);
+    padding: 8px;
+    margin: 6px auto;
+    border-radius: 8px;
+    max-width: 900px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 40px;
+    opacity: 0.7;
+}
